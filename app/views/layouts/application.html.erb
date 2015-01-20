@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NewProject</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<!--Sign Up and Sign In
+<% if user_signed_in? %>
+  <li>You are logged in as <%= current_user.email %></li>
+  <li><%= link_to 'log out', destroy_user_session_path, method: :delete %></li>
+<% else %>
+  <li><%= link_to "Sign Up", new_user_registration_path %></li>
+  <li><%= link_to "Sign In", new_user_session_path %></li>
+<% end %>
+--End Links-->
+
+<body>
+
+<div class="jumbotron">
+  <center>
+  <h1><strong>Welcome to Bike Berlin</strong></h1>
+  <h2>Your source for used bikes in Berlin</h2>
+  </center>
+</div>
+
+<%= yield %>
+
+
+
+
+
+
+</body>
+</html>
